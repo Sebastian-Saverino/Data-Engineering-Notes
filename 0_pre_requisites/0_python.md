@@ -52,8 +52,40 @@ Reference: [OOP](https://www.techtarget.com/searchapparchitecture/definition/obj
 
 ![alt text](image.png)
 
- 
+**High Level** : This is some corelation between a high level language and having an interpreter. When you work with a high level language its like having a language that is more human readable then machine readable like print("Hello World") (human readable)
+48 65 6c 6c 6f 20 77 6f 72 6c 64 this is hello world in binary this is infact no readable at all unless your that person. 
 
+**Dynamic Semantics**: This is the idea that the language expands upon it selt, as we create new variable we are increasing the semantics of our language as we bring out more ideas to take in account for.
+Reference: [Dynamic Semantics](https://plato.stanford.edu/entries/dynamic-semantics/)
+**Data structures**: this is the idea of being able to hold data like 1,2,3,4 in one variable like this var = [1,2,23,45]
+**Dynamic Typing**: This is the idea of saying var = 1. Python recongizes that 1 is an integer and will assume that at runtime just adding to its useabiliity where some languages such as C you have to declare the type for each item.  The following examples show how python can have an int and see that then you can change the value of x within your code then python will change that value to a string.
+`x = 42 | Type: <class 'int'> x = Dynamic Typing in Python | Type: <class 'str'>`
+
+**Dynamic Binding**: `class shape:
+   def draw(self):
+      print ("draw method")
+      return
+
+class circle(shape):
+   def draw(self):
+      print ("Draw a circle")
+      return
+
+class rectangle(shape):
+   def draw(self):
+      print ("Draw a rectangle")
+      return
+
+shapes = [circle(), rectangle()]
+for shp in shapes:
+   shp.draw()`
+
+This example shown above speaks to the idea of polymorphims, as you notice we have a class shape so we can get our shape then we can use that class as an argument for circle.
+
+
+This are the key points of python and what makes it so great, as you can see the buzz word *dynamic*, that is truly python, python can do a ton while  doing it in a readable and understandable way for people to understand, this in turn creates a ton of support from people to build upon the logic of python creating a large supply of packages for python for different kinds of work, but specifically for this data engineering focused notes we use python as it can be a glue language as the paragraph speaks on, as python can be a hub for our backend data.
+
+ 
 
 
 
