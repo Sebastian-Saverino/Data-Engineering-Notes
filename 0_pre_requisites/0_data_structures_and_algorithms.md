@@ -26,3 +26,38 @@ Hint: Look for loops this can tell us what time complexity we're using
 constants are always dropped say you have two algoritims that loop through so see each value 
 
 The cost of processing one element is constant, and we repeat that constant operation n times, which results in O(n).
+
+Constants are in theory not in important as they don't change the time complexity. 
+
+The big question we're asking is, how does the algo grow? So we're not as understanding of. 
+
+In interview questions they do a problem where the list stops at the end of the list to effect O(n) but remember we care about the algo not the constants
+
+When we talk about space and time complexity
+Growth is with respect to the input
+constants are dropped
+worst case is usually the way we measure
+
+![Big O Chart](image-1.png)
+
+O(1) 
+    O(n2)
+    O(n3)
+
+
+O(logn)
+    Binary search tress
+
+O(n)
+O(nlogn)
+    Quicksort
+
+
+O(n^2)
+
+O(2^n)
+
+o(n!)
+
+O(sqrt(n))
+
