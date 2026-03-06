@@ -61,3 +61,19 @@ o(n!)
 
 O(sqrt(n))
 
+# Array Data Structure
+
+What is an array?
+
+It is a unbreaking memory space with a certain amount bytes.
+
+
+What you said:
+
+"a[0] is just asking to view those bytes in memory through the array"
+
+That is basically correct, but more precisely:
+
+a[0] means "go to the memory location that represents the first element of the array and interpret those bytes as an integer."
+
+So the array acts like a structured way to access raw memory.
