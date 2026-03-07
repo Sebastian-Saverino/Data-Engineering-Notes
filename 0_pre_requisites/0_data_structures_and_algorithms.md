@@ -59,3 +59,22 @@ That is basically correct, but more precisely:
 a[0] means "go to the memory location that represents the first element of the array and interpret those bytes as an integer."
 
 So the array acts like a structured way to access raw memory.
+
+
+How to index an array.
+
+It takes the width then multiples by the offset then goes and get it at the memory address
+
+
+address = base + (offset × width)
+
+Example:
+
+base = 1000
+offset = 2
+width = 4
+
+1000 + (2 × 4) = 1008
+
+Arrays don't insert, they overwrite go the the a 
+
