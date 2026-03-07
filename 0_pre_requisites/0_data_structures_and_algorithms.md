@@ -7,7 +7,7 @@ This is how you gain "aura" in the world of computers. This is the idea of how w
 
 First what is the definition of a data structure?
 Data structure is  a data storage forma that enables efficient access and modification
-
+g
 
 What is an algorithm?
 
