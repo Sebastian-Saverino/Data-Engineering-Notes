@@ -76,5 +76,16 @@ width = 4
 
 1000 + (2 × 4) = 1008
 
-Arrays don't insert, they overwrite go the the a 
+Arrays don't insert, they overwrite go the a value
+
+When it comes to deletion, it is a little more simple as its will make the value 0 so a null value.
+
+Arrays are constant time, no matter the change nothing changes. THis made sense!! Felt a little smart.
+
+
+You cannot grow an array as it is continiguous memory chunks it will fall over to the next memory chunk which could remove data.
+
+So each element occupies 4 bytes worth of addresses (1000, 1001, 1002, 1003 all belong to arr[0]), but you only need to remember that each "step" is 4 addresses wide.
+Everything else you said is spot on — index × width + base address, and you land exactly on the right chunk of memory.
+
 
