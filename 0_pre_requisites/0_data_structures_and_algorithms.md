@@ -89,3 +89,19 @@ So each element occupies 4 bytes worth of addresses (1000, 1001, 1002, 1003 all 
 Everything else you said is spot on — index × width + base address, and you land exactly on the right chunk of memory.
 
 
+
+Our first search, 
+
+so how do we search on an array
+
+Linear search:
+
+a[v1,v2,v3,v9]
+
+search(a,v8)
+
+We look for the worst case 
+We are asking to look through the array and find v8, this goes through each value in a the array making it O(n)
+Since it is constant
+
+
