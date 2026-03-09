@@ -50,3 +50,21 @@ What considerations are important when determining the initial size of an array'
 How much poping and methods would be used against this array? I was kinda right but you have to balance between having enough space to avoid frequent reallocation and not wasting excessive memory by creating an overly large buffer.
 What are the different types of array size specification in programming languages?
 Arrays can have variable sizes so what we set at runtime or compile-time fixed sizes where the size is decided before the program execution.
+
+
+What is the time complexity of a linear search algorithm?
+
+It is O(n), as the input grows so does the search time making it constant
+
+What are the key steps in implementing a basic linear search algorithm? Having a loop that loops through the data for a selected value
+
+So to be more specific have the array from index 0 loop through length -1 so the entire data set then compare the val to each number in the array. If the value is not in the data set then return false.
+
+What is the basic signature for a learn search function?
+The loop but more specifically, having an array so our data with a target value to find then return a boolean saying whether or not a value is there
+
+What is the worst-case scenario for a linear search?
+The value not being in the dataset. Therefor you have to search through each element in the array.
+
+How does a linear search compare an array's elements to find a specific value?
+As the loop goes through the array the element is compared to the value.
