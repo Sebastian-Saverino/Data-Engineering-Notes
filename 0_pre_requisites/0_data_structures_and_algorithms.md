@@ -94,7 +94,7 @@ Our first search,
 
 so how do we search on an array
 
-Linear search:
+# Linear search:
 
 a[v1,v2,v3,v9]
 
@@ -103,5 +103,93 @@ search(a,v8)
 We look for the worst case 
 We are asking to look through the array and find v8, this goes through each value in a the array making it O(n)
 Since it is constant
+
+
+# Binary Search
+
+When we look at our data, we ask, is it ordered?
+
+
+### Simple Explanation of Binary Search
+
+**Binary search** is a way to find something in a **sorted list** by repeatedly checking the **middle element** and eliminating half of the remaining items.
+
+Instead of looking at every item one by one, binary search **cuts the search space in half each time**.
+
+---
+
+### Example
+
+Sorted list:
+
+```
+[1, 3, 5, 7, 9, 11, 13, 15]
+```
+
+We want to find:
+
+```
+13
+```
+
+---
+
+### Step 1 — Look at the Middle
+
+```
+[1, 3, 5, 7, 9, 11, 13, 15]
+             ↑
+```
+
+Middle value = **9**
+
+Since **13 > 9**, the number cannot be on the left side.
+
+So we **throw away half the list**.
+
+---
+
+### Step 2 — Search the Remaining Half
+
+```
+[11, 13, 15]
+      ↑
+```
+
+Middle value = **13**
+
+We found it.
+
+---
+
+### Why It’s Fast
+
+Each step removes **half of the remaining elements**.
+
+Example with 1,000,000 items:
+
+| Step | Items Remaining |
+| ---- | --------------- |
+| 1    | 1,000,000       |
+| 2    | 500,000         |
+| 3    | 250,000         |
+| 4    | 125,000         |
+| ...  | ...             |
+| ~20  | 1               |
+
+So even with **1 million items**, it only takes about **20 checks**.
+
+
+---
+
+### One Sentence Summary
+
+**Binary search works by repeatedly checking the middle of a sorted list and eliminating half of the remaining elements until the target is found.**
+
+
+If the input halves at each step it is either O(LogN) or O(NlogN)
+
+
+
 
 

@@ -68,3 +68,20 @@ The value not being in the dataset. Therefor you have to search through each ele
 
 How does a linear search compare an array's elements to find a specific value?
 As the loop goes through the array the element is compared to the value.
+
+
+What is the key characteristic of an algorithm that can take advantage of an ordered data set?
+
+mathematical operations, by this we can optimize the search by making strategic jumps instead of checking everything.
+
+What is the primary problem with jumping a fixed percentage (like 10%) through an array when searching?
+
+You're still going in O(n) speed so constant time. Think worst case scenario, you would still be looping through the last section one by one when looking for the last one.
+
+How does binary search reduce the search space with each iteration?
+It cuts the search in half.
+
+What is the runtime complexity of binary search?
+O(logN) the number of steps grows logarithmically with the size of the input array.
+
+What does the equation N/2^k = 1 represent in binary search? this is equal to O(logN)
