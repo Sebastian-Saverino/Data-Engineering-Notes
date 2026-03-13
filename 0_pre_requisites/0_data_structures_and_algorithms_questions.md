@@ -85,3 +85,27 @@ What is the runtime complexity of binary search?
 O(logN) the number of steps grows logarithmically with the size of the input array.
 
 What does the equation N/2^k = 1 represent in binary search? this is equal to O(logN)
+
+
+What are the three main conditions in binary search?
+A low, hi, val
+
+if the needle our check is equal to the value return true, when the value is greater than the needle increase high side when value is is less then the needle search on the high side
+
+left + ((left + right) / 2) 
+
+How does binary search modify the search range when the current value is less than the needle. 
+Reduce the high side
+
+What are the initial values for lo and hi in binary search?
+
+lo = 0 hi = len(data) + 1
+
+
+What is the primary loop condition in binary search?
+when lo <= hi
+
+
+Give two crystal balls that will break if dropped form high enough distance, determine the exact spot in which ti will break in the most optimize way.
+
+I first thought the best way to do this was to do a binary search and start at q1 and q3 but the best way is actually using the square root of n then doing a linear search after that last jump which is very interesting.
