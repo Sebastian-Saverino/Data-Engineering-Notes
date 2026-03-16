@@ -29,7 +29,7 @@ In interview questions they do a problem where the list stops at the end of the 
 
 When we talk about space and time complexity Growth is with respect to the input constants are dropped worst case is usually the way we measure
 
-Big O Chart
+![Big O Chart](image-2.png)
 
 O(1) O(n2) O(n3)
 
@@ -192,4 +192,17 @@ If the input halves at each step it is either O(LogN) or O(NlogN)
 
 
 
+
+Sorting time
+
+Bubble sort
+
+Okay what is bubble sort;
+
+Bubble sort is an algorithm to sort an unsorted array.
+
+The idea of it is you take the value in the 0 position ask the number in the position to the right of it if it is bigger, if it is not then we check the next index 1 next to index 2 say index 1 is bigger then index 2 then those switch places the intent is to get the largest number to the last position after the first iteration, we then continue this but stop before that last big number.
+
+
+Drop insignificant vales in big o land
 

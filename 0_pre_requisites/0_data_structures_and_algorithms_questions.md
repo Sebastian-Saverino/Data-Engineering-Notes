@@ -109,3 +109,50 @@ when lo <= hi
 Give two crystal balls that will break if dropped form high enough distance, determine the exact spot in which ti will break in the most optimize way.
 
 I first thought the best way to do this was to do a binary search and start at q1 and q3 but the best way is actually using the square root of n then doing a linear search after that last jump which is very interesting.
+
+What is the mathematical definition of a sorted array?
+
+Any element x[i] is less than or equal to x[i + 1] throughout the entire array.
+
+How does the basic bubble sort algorithm work?
+
+It compares adjacent elements and swaps them if they are in the wrong order, moving the largest element to the end of the array in each iteration.
+
+What is the time complexity of bubble sort?
+O(n**2)
+
+What unique property occurs in each iterations of bubble sort?
+The largest unsorted element is moved to the end of the unsorted portion of the array.
+
+How does the number of comparisons change in each iterations of bubble sort?
+The number of comparisons decreases with each pass, as the last element becomes sorted and is no longer compared.
+
+What are the runtime characteristics of Bubble Sort?
+
+O(n**2)
+
+What are the key steps in implementing the Bubble Sort algorithm?
+having an unsorted array
+Use nested loops with outer loop running n times
+Inner loop compares adjacent elements
+Swap elements if they are in the wrong order
+Reduce inner loop iterations with each pass
+Largest unsorted element 'bubbles up' to the end in each pass
+
+
+How does the inner loop range change in Bubble Sort?
+The inner loop range progressively decreases by subtracting the current outer loop iteration (i), so it goes from n-1 to n-1-i, ensuring already sorted elements at the end are not re-examined.
+
+What is the basic swap operation in Bubble Sort?
+
+
+
+        if array[j] > array[j + 1]:
+            array[j], array[j + 1] = array[j + 1], array[j]
+
+print(array)
+
+
+What happens to the array after each complete pass in Bubble Sort?
+
+After each complete pass, the largest unsorted element 'bubbles up' to its correct final position at the end of the array, reducing the range of unsorted elements.
