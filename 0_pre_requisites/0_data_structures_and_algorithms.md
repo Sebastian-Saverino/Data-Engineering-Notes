@@ -206,3 +206,40 @@ The idea of it is you take the value in the 0 position ask the number in the pos
 
 Drop insignificant vales in big o land
 
+
+
+Lets talk about LinkedList
+SO how does it work
+Singly linked
+
+a -> b -> c -> d
+
+a double linked list 
+
+a <-> b <-> c <-> d
+
+deletion is constant time
+can be fast
+
+insertion fast 
+insertion is O(1)
+
+
+no indexs in linked list
+
+linked list complexity
+
+time / space complexity
+prepend / append fast because you can go to the head / tail but cost more if in the middle as you have to traverse there
+
+insertion in the middle same idea, will be more costly as you have to traverse there
+
+deletion from ends simple as we have access to the head/ tail
+deletion in the middle same idea as insertion
+
+
+linked list is a data structure and do stuff to it is an algorithm
+
+Queue is a fifo structure
+First in first out
+Don't need to use a double linked list because we don't need to reference the previous

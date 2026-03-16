@@ -156,3 +156,84 @@ print(array)
 What happens to the array after each complete pass in Bubble Sort?
 
 After each complete pass, the largest unsorted element 'bubbles up' to its correct final position at the end of the array, reducing the range of unsorted elements.
+
+
+What is a linked list, and how does it fundamentally differ from an array?
+It cannot be indexed like an array instead it uses nodes for each value.
+
+A linked list is a node-based data structure where each node contains a value and a reference (pointer) to the next node. Unlike arrays, linked lists allow dynamic insertion and deletion with constant time complexity, and do not require shifting indices when modifying the list.
+
+
+What are the key characteristics of a singly linked list?
+The value can only see next and not previous
+In a singly linked list, each node points only forward to the next node, which means you can only traverse the list in one direction. If you lose the reference to a previous node, you cannot access it again.
+
+What distinguishes a doubly linked list from a singly linked list?
+you can move forward and backwards in the linked list.
+
+How does insertion work in a linked list, and what is its time complexity?
+Say we want to insert in front of the second value in the list, you would move each value to the right in a single linked list and it is in O(n)
+
+Insertion in a linked list involves adjusting pointers. The pointer manipulation itself is O(1), but finding the insertion position may require O(n) traversal. Overall complexity is O(1) for insertion at the head or with a known reference, and O(n) when searching for a specific position.
+
+What are the memory allocation characteristics of a linked list?
+Linked lists use heap-allocated objects, which means nodes are stored in memory locations that are typically more expensive than stack memory. Each node is a separate object containing a value and references to other nodes.
+
+What is the time complexity of accessing the head or tail of a linked list?
+constant
+Accessing the head or tail of a linked list is a constant time operation (O(1)) because the linked list maintains direct references to these nodes
+
+What are the time complexities of deletion in a linked list?
+0(N) can still be a computational heavy as you have to traverse the input
+Deletion at the head or tail is a constant time operation (O(1)), while deletion in the middle requires traversal, making it more costly with a time complexity of O(n)
+
+
+Why can prepending and appending to a linked list be fast?
+Prepending and appending are constant time operations because you can simply break and rearrange links at the head or tail without traversing the entire list
+
+
+What is a key weakness of linked lists compared to other data structures?
+Linked lists are not contiguous in memory, which means traversal can be costly and they lack the memory optimization benefits of contiguous data structures
+
+
+How can a linked list be conceptually viewed in relation to other data structures?
+Every linked list can be considered a graph and technically a tree, making it a foundational data structure for understanding more complex data structures
+
+
+What is the primary characteristic of a queue data structure?
+First in first out just need to use single linked list
+
+What are the two main operations when inserting an element into a queue?
+
+make the prev head in the head next then make the original header null 
+make the tail equal to next
+
+What are the performance characteristics of queue operations?
+Both pushing and popping elements from a queue are constant time (O(1)) operations, as they only involve updating pointers and do not require traversing the entire list
+
+
+What are the performance characteristics of queue operations?
+
+Both pushing and popping elements from a queue are constant time (O(1)) operations, as they only involve updating pointers and do not require traversing the entire list.
+
+A singly linked list is used, which does not require the additional computation time or storage requirements of a doubly linked list.
+
+What additional operation is commonly included with queue implementations?
+A peek operation, which allows viewing the first element (at the head) without removing it from the queue, typically accessed via head.value.
+
+
+What are the primary methods typically implemented in a queue data structure?
+The primary methods are enqueue (adding an item to the queue), dequeue (removing an item from the queue), and peek (viewing the first item without removing it)
+
+
+What is the purpose of having a next property as optional in a queue node?
+An optional next property allows flexibility in the data structure, preventing infinite memory creation and accommodating varying numbers of elements in the queue
+
+What are the two key references maintained in a queue implementation?
+The two key references are head and tail, which point to the first and last nodes in the queue respectively
+
+What bookkeeping operation is crucial when implementing a queue's dequeue method?
+Decrementing the length property is crucial to keep track of the number of items in the queue when removing an item
+
+When adding the first element to an empty queue, what special handling is required?
+When the queue is empty, the first element becomes both the head and tail of the queue, and the length is incremented
