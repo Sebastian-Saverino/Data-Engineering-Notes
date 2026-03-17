@@ -237,3 +237,99 @@ Decrementing the length property is crucial to keep track of the number of items
 
 When adding the first element to an empty queue, what special handling is required?
 When the queue is empty, the first element becomes both the head and tail of the queue, and the length is incremented
+
+
+
+What is a stack in data structures? 
+
+A stack is a singly linked list where elements are added and removed only from the head, following a Last-In-First-Out (LIFO) principle, similar to a stack of plates where the last item added is the first one removed.
+
+How does the push operation work in a stack?
+To push an element in a stack, you point the new element's 'next' pointer to the current head, and then update the head to point to the new element.
+
+
+How does the pop operation work in a stack?
+In a pop operation, you first save the current head, then update the head to point to the next element, effectively removing the top element from the stack.
+
+
+What makes stack operations efficient?
+Stack operations are efficient because they involve constant time pointer manipulations, which do not depend on the number of items in the list or the size of the values.
+
+
+How are function calls related to a stack?
+Function calls are conceptually similar to a stack, with each function call being 'pushed' onto the call stack and 'popped' off when the function completes. The memory used for these calls is literally called the 'stack'.
+
+
+What is the key difference in node definition when implementing a Stack compared to a traditional linked list?
+Instead of using 'next', the instructor uses 'previous' to point to the previous node, which helps with visualization and understanding the stack's structure
+
+
+What are the two key operations when implementing a Stack data structure?
+Push (adding an element to the top of the stack) and Pop (removing the top element from the stack)
+
+How does the pop method handle length to prevent negative values?
+By using Math.max(0, this.length - 1) to ensure the length never goes below zero
+
+
+
+What are the three main steps when implementing the pop method in a Stack?
+Save a pointer to the current head, 2. Update head to point to the previous node, 3. Return the value of the popped node
+
+
+What are the performance characteristics of accessing elements in an array?
+Array access is O(1), meaning it's fast and constant time. You can directly access elements by their index with immediate retrieval.
+
+
+What is a key limitation when inserting or deleting elements in an array?
+Inserting or deleting elements in an array requires manually shifting all other elements, which typically involves writing for loops to move elements and create space for the new value.
+
+How does memory allocation differ between arrays and linked lists?
+Arrays allocate all memory upfront, meaning if you want space for 1000 items, you reserve all that memory immediately. Linked lists, in contrast, allocate memory dynamically, creating nodes only when elements are inserted.
+
+What is the primary search mechanism for a linked list?
+Linked lists can only perform linear search, which means traversing each element sequentially until the desired item is found. There is no possibility of binary search or direct random access.
+
+
+What is an example use case where a linked list might be preferred over an array?
+A linked list is ideal for scenarios like an async request queue, where you need to efficiently push and pop elements from the head or tail without the performance overhead of shifting array indices.
+
+
+What are the two primary operations performed in an ArrayList?
+push and a pop at constant time
+
+How does an ArrayList handle capacity when adding elements beyond its initial size?
+It creates a new array with a larger capacity (often doubled), then copies existing elements to the new array, allowing for dynamic growth
+
+
+What are the performance characteristics of inserting or deleting elements from the front or middle of an ArrayList?
+Inserting or deleting from the front or middle requires shifting all subsequent elements, resulting in an O(N) time complexity
+
+
+What is the primary difference between an ArrayList's push/pop operations versus enqueue/dequeue operations?
+Push and pop at the end are O(1) operations, while enqueue and dequeue from the front require shifting all elements, making them O(N) operations
+
+
+An ArrayList provides constant-time random access by index and efficient push/pop operations at the end, whereas a Linked List provides efficient insertion and deletion at any point
+What are the key advantages of an ArrayList compared to a Linked List?
+
+Click to reveal answer
+An ArrayList provides constant-time random access by index and efficient push/pop operations at the end, whereas a Linked List provides efficient insertion and deletion at any point
+
+What is a ring buffer, and what makes its operations unique?
+A ring buffer is a data structure where operations like pushing, popping, shifting, and unshifting are O(1), using modulo arithmetic to wrap around an array. It maintains order by using head and tail indices that can move circularly within a fixed-size array.
+
+How does the modulo operator work in the context of a ring buffer?
+The modulo operator helps calculate the actual index within the array by taking the remainder when an index exceeds the array's length. For example, if the array size is 10 and the tail is 12, 12 modulo 10 would be 2, wrapping the index back to the beginning of the array.
+
+
+What happens when a ring buffer needs to resize?
+When a ring buffer needs to resize, it creates a new larger buffer, starting at the head and copying elements in order. The head will be set to 0, and the tail will be set to the current length, allowing for additional capacity and continued circular operations.
+
+
+What is a practical use case for a ring buffer?
+
+A ring buffer can be used in log batching scenarios, where logs need to maintain order while being written. It allows for efficient logging by periodically flushing a batch of logs without blocking the main service, and without requiring complex mutex synchronization.
+
+
+What is an object pool, and how is it related to ring buffers?
+An object pool is a technique for reusing objects instead of creating new ones repeatedly, which can improve performance and memory usage. While ring buffers can be used for object pooling, a simple ArrayList is often sufficient if the order of object creation is not important.  

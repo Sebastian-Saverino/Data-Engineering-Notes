@@ -243,3 +243,50 @@ linked list is a data structure and do stuff to it is an algorithm
 Queue is a fifo structure
 First in first out
 Don't need to use a double linked list because we don't need to reference the previous
+
+What is a Stack
+
+it is a single linked list similar to a queue
+
+where you can only add and remove from the head
+
+this is constant time
+
+adding this constraints is great for speed 
+
+Array vs linkedlist
+
+Array you have to show the memory up front for allocation
+
+linked list is more optimized 
+
+linked list you have to traverse every time 
+
+list for push and pop
+
+array for random access
+
+
+an arraylist is fundamentally an array but you do list like operations on it like push and pop
+
+
+we will be using the length for these operations
+
+for an array you want to use the least amount of memory for the the amount of capacity.
+
+push and pop understand the length and capacity 
+
+this is in O(n) as you have to shift everything
+
+
+interview tip
+
+your answer should always be it depends
+
+
+Array buffer
+
+you use the modulo operator when 
+
+this is like a queue but say you're tail gets to the so then you have 
+
