@@ -290,3 +290,28 @@ you use the modulo operator when
 
 this is like a queue but say you're tail gets to the so then you have 
 
+# Recursion
+
+It is something that keeps calling itself
+
+recursion is a function that calls itself until the problem is solved
+
+This usually involves what is referred to as  a "base case" A base case is the point th problem is solved at.
+
+it goes down the stack then goes up the stack
+
+
+sum_to_n(4)
+= 4 + sum_to_n(3)      ← not finished, waiting...
+
+    sum_to_n(3)
+    = 3 + sum_to_n(2)  ← waiting...
+
+        sum_to_n(2)
+        = 2 + sum_to_n(1)  ← waiting...
+
+            sum_to_n(1)
+            = 1   ← ✅ base case reached
+
+
+

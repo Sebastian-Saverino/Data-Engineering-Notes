@@ -333,3 +333,20 @@ A ring buffer can be used in log batching scenarios, where logs need to maintain
 
 What is an object pool, and how is it related to ring buffers?
 An object pool is a technique for reusing objects instead of creating new ones repeatedly, which can improve performance and memory usage. While ring buffers can be used for object pooling, a simple ArrayList is often sufficient if the order of object creation is not important.  
+
+
+What are the three components that are used when a function is called?
+Return address (where the function was called from), 2) Return value (the value to be returned), and 3) Arguments (the input parameters)
+
+
+What are the three steps of recursion when breaking down the recursive process?
+Pre-operation (something done before recursion), 2) Recursion (actual function call), and 3) Post-operation (something done after recursion)
+
+What is the most critical aspect of creating a recursive function?
+Establishing a clear and correct base case. Without a proper base case, recursion becomes extremely difficult to implement and can lead to infinite loops.
+
+How does a recursive function typically terminate its recursive calls?
+By reaching a base case, where the function no longer calls itself and instead returns a specific value or performs a final operation
+
+What happens to the function call stack during a recursive process?
+The stack grows downward as recursive calls are made, then unwinds upward as each function returns its calculated value, with each function adding its own computation to the final result
