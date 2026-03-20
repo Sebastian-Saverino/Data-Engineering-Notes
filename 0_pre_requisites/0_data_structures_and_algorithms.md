@@ -315,3 +315,10 @@ sum_to_n(4)
 
 
 
+Finding our base case for the sake of aura
+
+MazeSolver
+
+If there is a branching factor you use recursive 
+
+Always find your base cases first.

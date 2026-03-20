@@ -350,3 +350,34 @@ By reaching a base case, where the function no longer calls itself and instead r
 
 What happens to the function call stack during a recursive process?
 The stack grows downward as recursive calls are made, then unwinds upward as each function returns its calculated value, with each function adding its own computation to the final result
+
+What are the four directions that can be explored when solving a maze recursively?
+up down right left
+
+What are the four base cases to consider when implementing a recursive maze?
+Out of bounds, hit a wall, are we at the end point, and have we seen it
+
+Why is it important to track previously visited titles in a recursive maze solver?
+We can find ourselves in a loop forever
+
+What data structures can be used to track visited tiles in a recursive maze solving algorithm?
+A 2D boolean array, where false indicates an unvisited tile and true indicates a tile that has been previously explored
+
+What happens if a recursive maze solving algorithm does not prevent revisiting tiles?
+It can lead to an infinite loop that eventually causes a stack overflow, as the function keeps calling itself repeatedly on the same tiles
+
+What are the three steps in recursion?
+Find base case (Pre), find recursive case(recurse), your conclusion (post) 
+
+What is the purpose of using direction arrays in recursive maze solving?
+o systematically explore different directions (left, right, up, down) when navigating through a maze
+
+When is recursion typically recommended over using a for loop?
+
+When there is no defined end point, or when there is a significant branching factor that makes linear iteration difficult
+
+What must be tracked when using recursion for pathfinding?
+Maintaining a path array, marking visited locations, and tracking the current position
+
+What is an important consideration when implementing a recursive function?
+Clearly defining the base case to determine when to stop recursing, which helps reduce complexity and improve readability
