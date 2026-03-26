@@ -322,3 +322,42 @@ MazeSolver
 If there is a branching factor you use recursive 
 
 Always find your base cases first.
+
+
+Algorithm strategy 
+
+Divide and conquey 
+
+split your input into chunks then go over those into smaller chucks to work through easily
+
+Quicksort
+
+Divides and conquers
+
+
+quicksort can be nlogn orrrr n2 dependings on how you choose your pivot and how your array is sorted
+
+
+
+A doubly linked list is a linear data structure where each element (node) contains data and two pointers (links): one to the next node and one to the previous node
+
+All programming will lead us to trees
+
+
+A tree is like a node with "children" nodes associated with it
+
+root - the most parent node.
+The top most node 
+
+height - the longest path from the root to the most child node 
+
+
+binary tree - a tree in which has at most 2 children, at least 0 children
+
+
+general tree - a tree with 0 or more children
+binary search tree - a tree in which has a specific ordering to the nodes and at most 2 children
+ 
+leaves - a node without children
+balanced - a tree is perfectly balanced when any node's left and right children have the same height.
+branching factor - the amount of children a tree has.

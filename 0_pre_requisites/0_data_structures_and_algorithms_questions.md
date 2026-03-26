@@ -380,4 +380,23 @@ What must be tracked when using recursion for pathfinding?
 Maintaining a path array, marking visited locations, and tracking the current position
 
 What is an important consideration when implementing a recursive function?
-Clearly defining the base case to determine when to stop recursing, which helps reduce complexity and improve readability
+Clearly defining the base case to determine when to stop recursing, which helps reduce complexity and improve readability\
+
+What is the core principle of the Divide and Conquer algorithm strategy?
+Divide and Conquer involves splitting input into smaller chunks, solving those subsets progressively, and repeatedly splitting until reaching a fundamental unit that can be easily solved.
+
+In QuickSort, what is a 'pivot' and how is it used in the sorting process?
+This is the middle point in which we do our compartmentalizing from.
+
+A pivot is an element used to partition the array, with elements less than or equal to the pivot placed on one side, and elements greater than the pivot placed on the other side.
+
+What are the potential time complexity ranges for the QuickSort algorithm?
+nlogn for good scenarios 
+n2 for bad scenarios
+
+What makes QuickSort perform poorly in its worst-case scenario?
+
+When sorting a reverse sorted array, QuickSort can degrade to O(n squared) time complexity because each pivot selection results in an unbalanced partition.
+
+How does QuickSort handle sorting an array recursively?
+QuickSort recursively divides the array by selecting a pivot, partitioning elements around the pivot, and then applying the same process to the subarrays until the entire array is sorted.
