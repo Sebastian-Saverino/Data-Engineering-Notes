@@ -361,3 +361,26 @@ binary search tree - a tree in which has a specific ordering to the nodes and at
 leaves - a node without children
 balanced - a tree is perfectly balanced when any node's left and right children have the same height.
 branching factor - the amount of children a tree has.
+
+tree traversals
+
+so you start at the root then you do the recursion based off going from the left to the right
+
+There are three different recursion types
+
+pre
+
+in order
+
+post you 
+
+
+Since last time we did a breadth first search
+
+
+this is the idea of going layer by layer to search for our number
+
+
+we can do this with our standard search which starts from the start to the end
+
+we can also do this with starting from the bottom and working our way up which can help maintain the tree structure

@@ -400,3 +400,19 @@ When sorting a reverse sorted array, QuickSort can degrade to O(n squared) time 
 
 How does QuickSort handle sorting an array recursively?
 QuickSort recursively divides the array by selecting a pivot, partitioning elements around the pivot, and then applying the same process to the subarrays until the entire array is sorted.
+
+
+What is the key operation in the partition function of QuickSort?
+The key operation is to move elements less than or equal to the pivot to the left side of the array, creating a weakly sorted subarray with the pivot in the correct position.
+
+What are the two primary functions typically used in implementing QuickSort?
+The two primary functions are the partition function (which creates the pivot index and moves elements) and the QuickSort function (which performs recursive sorting using the partition result).
+
+What is the base case condition for the QuickSort recursive algorithm?
+The base case is when the low index is greater than or equal to the high index, at which point the recursion stops and no further sorting is needed.
+
+How does QuickSort handle sorting subarrays after partitioning?
+QuickSort recursively calls itself on the subarrays to the left and right of the pivot, excluding the pivot index, using a divide and conquer strategy.
+
+What is the typical pivot selection method demonstrated in the implementation?
+In this implementation, the pivot is selected as the last element of the current subarray being sorted.
