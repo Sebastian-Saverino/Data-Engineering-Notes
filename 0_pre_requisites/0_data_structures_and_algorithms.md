@@ -384,3 +384,14 @@ this is the idea of going layer by layer to search for our number
 we can do this with our standard search which starts from the start to the end
 
 we can also do this with starting from the bottom and working our way up which can help maintain the tree structure
+
+
+BST 
+
+This is binary search tree
+
+It is a recursive quicksort
+
+Honestly pretty simple
+
+Not going to lie.
