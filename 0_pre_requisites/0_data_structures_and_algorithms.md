@@ -402,3 +402,8 @@ Heap time
 min heap smallest number is the base node and max heap big number is the base node
 
 this is a way of finding the min and max values in a a tree great for priority queses
+
+
+Trie tree
+
+Visualize like an autocomplete
