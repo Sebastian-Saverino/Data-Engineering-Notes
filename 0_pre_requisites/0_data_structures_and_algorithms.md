@@ -407,3 +407,15 @@ this is a way of finding the min and max values in a a tree great for priority q
 Trie tree
 
 Visualize like an autocomplete
+
+
+Graphs
+
+honestly much simpler then I thought
+
+its more of the traversing through them that makes them a little bit more of a challenge aside from that, not too bad. 
+
+What is Dijskra Shortest Path
+
+This is a greedy algorithm to find out the shortest distance to get to each node to each node.
+
