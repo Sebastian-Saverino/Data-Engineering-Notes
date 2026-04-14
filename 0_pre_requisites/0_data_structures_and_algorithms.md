@@ -419,3 +419,7 @@ What is Dijskra Shortest Path
 
 This is a greedy algorithm to find out the shortest distance to get to each node to each node.
 
+The algorithms course has been finished.
+
+I want to spend more focused amount of time learning graphs and maps a little bit more, especially maps, as dictionaries are great tools in python.
+
